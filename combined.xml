@@ -8,5 +8,12 @@
     <itunes:author>Morag</itunes:author>
     <itunes:category text="Technology"/>
     <itunes:image href="https://mycocybe.github.io/all-list-morags-daily-podcasts/artwork_all.jpg"/>
+    <item>
+      <title>[TEST] THIS IS FOR THE ALL LIST</title>
+      <description>Test episode to verify the ALL LIST feed is working correctly.</description>
+      <enclosure url="https://mycocybe.github.io/audio-mo-pods/test.mp3" length="353946" type="audio/mpeg"/>
+      <pubDate>Sat, 12 Apr 2026 20:00:00 +0100</pubDate>
+      <itunes:duration>0:19</itunes:duration>
+    </item>
   </channel>
 </rss>
