@@ -9,6 +9,12 @@
     <itunes:category text="Technology"/>
     <itunes:image href="https://mycocybe.github.io/all-list-morags-daily-podcasts/artwork_all.jpg"/>
     <item>
+      <title>[TEST] THIS IS FOR THE ALL LIST</title>
+      <description>Test episode to verify the ALL LIST feed is working correctly.</description>
+      <pubDate>Sat, 12 Apr 2026 20:00:00 +0100</pubDate>
+      <itunes:duration>0:01</itunes:duration>
+    </item>
+    <item>
       <title>[AIDB] The New AI Org Chart</title>
       <description>Jack Dorsey and Sequoia argue AI can replace the information-routing function of hierarchy.</description>
       <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118326598/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F421897951-44100-2-689b676c039cb.mp3" length="26486490" type="audio/mpeg"/>
