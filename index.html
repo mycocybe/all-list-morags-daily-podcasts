@@ -27,45 +27,258 @@
     padding-bottom: 100px;
     -webkit-font-smoothing: antialiased;
   }
-  h1 { font-size: 1.6em; margin-bottom: 4px; }
-  .subtitle { color: var(--muted); font-size: 0.85em; margin-bottom: 20px; }
-  .tabs { display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
-  .tab { padding: 8px 16px; border-radius: 8px; background: var(--card); border: 1px solid var(--border); color: var(--muted); font-size: 0.9em; cursor: pointer; transition: all 0.2s; }
-  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-  .loading { text-align: center; padding: 40px; color: var(--muted); }
-  .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
-  @geyframes spin { to { transform: rotate(360deg); } }
-  .day-group { margin-bottom: 24px; }
-  .day-label { font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent2); margin-bottom: 10px; font-weight: 600; }
-  .episode { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 10px; }
-  .ep-podcast { font-size: 0.75em; color: var(--accent); font-weight: 600; margin-bottom: 4px; text-transform: uppercase; }
-  .ep-title { font-size: 0.95em; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
-  .ep-meta { font-size: 0.78em; color: var(--muted); display: flex; gap: 12px; }
-  .ep-desc { font-size: 0.82em; color: var(--muted); margin-top: 8px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .ep-links { margin-top: 10px; display: flex; gap: 8px; }
-  .ep-link { display: inline-block; padding: 6px 14px; border-radius: 6px; font-size: 0.78em; font-weight: 600; text-decoration: none; }
-  .ep-link.play { background: var(--green); color: #fff; }
-  .ep-link.web { background: var(--border); color: var(--text); }
-  .empty { text-align: center; padding: 40px 20px; color: var(--muted); }
-  .sub-list { margin-bottom: 20px; }
-  .sub-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
-  .sub-name { font-size: 0.9em; font-weight: 600; }
-  .sub-source { font-size: 0.72em; color: var(--muted); margin-top: 2px; }
-  .sub-remove { background: none; border: 1px solid #f8514966; color: #f85149; border-radius: 6px; padding: 4px 10px; font-size: 0.78em; cursor: pointer; }
-  .add-form { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
-  .add-form h3 { font-size: 0.95em; margin-bottom: 12px; }
-  .field { margin-bottom: 12px; }
-  .field label { display: block; font-size: 0.78em; color: var(--muted); margin-bottom: 4px; }
-  .field input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.9em; outline: none; }
-  .field input:focus { border-color: var(--accent); }
-  .btn { width: 100%; padding: 12px; border-radius: 8px; border: none; background: var(--accent); color: #fff; font-size: 0.9em; font-weight: 600; cursor: pointer; }
-  .msg { margin-top: 10px; padding: 10px; border-radius: 8px; font-size: 0.82em; display: none; }
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.85em;
+    margin-bottom: 20px;
+  }
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+  }
+  .tab {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--muted);
+  }
+  .spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .day-group {
+    margin-bottom: 24px;
+  }
+  .day-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent2);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .episode {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    transition: border-color 0.2s;
+  }
+  .episode:active {
+    border-color: var(--accent);
+  }
+  .ep-podcast {
+    font-size: 0.75em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .ep-title {
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .ep-meta {
+    font-size: 0.78em;
+    color: var(--muted);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .ep-desc {
+    font-size: 0.82em;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .ep-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+  }
+  .ep-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.78em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .ep-link:active { opacity: 0.7; }
+  .ep-link.play {
+    background: var(--green);
+    color: #fff;
+  }
+  .ep-link.web {
+    background: var(--border);
+    color: var(--text);
+  }
+  .empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+  }
+  .empty-icon { font-size: 2em; margin-bottom: 8px; }
+
+  /* Manage tab */
+  .sub-list {
+    margin-bottom: 20px;
+  }
+  .sub-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sub-name {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .sub-source {
+    font-size: 0.72em;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .sub-remove {
+    background: none;
+    border: 1px solid #f8514966;
+    color: #f85149;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.78em;
+    cursor: pointer;
+  }
+  .add-form {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .add-form h3 {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+  }
+  .field {
+    margin-bottom: 12px;
+  }
+  .field label {
+    display: block;
+    font-size: 0.78em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .field input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9em;
+    outline: none;
+  }
+  .field input:focus {
+    border-color: var(--accent);
+  }
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn:active { opacity: 0.8; }
+  .msg {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.82em;
+    display: none;
+  }
   .msg.success { display: block; background: #238636; color: #fff; }
   .msg.error { display: block; background: #da3633; color: #fff; }
-  .refresh-bar { position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; background: var(--card); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-  .refresh-bar .last-refresh { font-size: 0.75em; color: var(--muted); }
-  .refresh-btn { padding: 8px 18px; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); font-size: 0.82em; font-weight: 600; cursor: pointer; }
-  .count-badge { display: inline-block; background: var(--accent); color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 0.75em; font-weight: 700; margin-left: 6px; }
+  .refresh-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    background: var(--card);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .refresh-bar .last-refresh {
+    font-size: 0.75em;
+    color: var(--muted);
+  }
+  .refresh-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    font-size: 0.82em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
 </style>
 </head>
 <body>
@@ -79,7 +292,10 @@
 </div>
 
 <div id="episodes-tab">
-  <div class="loading" id="loading"><div class="spinner"></div><div>Fetching your pods...</div></div>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <div>Fetching your pods...</div>
+  </div>
   <div id="episode-list"></div>
 </div>
 
@@ -87,8 +303,14 @@
   <div class="sub-list" id="sub-list"></div>
   <div class="add-form">
     <h3>Add a Podcast</h3>
-    <div class="field"><label>Podcast Name</label><input type="text" id="add-name" placeholder="e.g. Hard Fork"></div>
-    <div class="field"><label>RSS Feed URL</label><input type="url" id="add-url" placeholder="https://feeds.example.com/podcast/rss"></div>
+    <div class="field">
+      <label>Podcast Name</label>
+      <input type="text" id="add-name" placeholder="e.g. Hard Fork">
+    </div>
+    <div class="field">
+      <label>RSS Feed URL</label>
+      <input type="url" id="add-url" placeholder="https://feeds.example.com/podcast/rss">
+    </div>
     <button class="btn" onclick="addPodcast()">Add Podcast</button>
     <div class="msg" id="add-msg"></div>
   </div>
@@ -100,21 +322,271 @@
 </div>
 
 <script>
-const CP=[u=>`https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,u=>`https://corsproxy.io/?${encodeURIComponent(u)}`];
-const SU='subscriptions.json',LK='mopods_local_subs',DB=3;
-async function gBS(){try{return await(await fetch(SU+'?t='+Date.now())).json()}catch{return[]}}
-function gLS(){try{return JSON.parse(localStorage.getItem(LK)||'[]')}catch{return[]}}
-function sLS(s){localStorage.setItem(LK,JSON.stringify(s))}
-async function gAS(){const b=await gBS(),l=gLS(),s=new Set,a=[];for(const x of[...b,...l])if(!s.has(x.feedUrl)){s.add(x.feedUrl);a.push({...x,source:b.find(y=>y.feedUrl===x.feedUrl)?'github':'local'})}return a}
-async function fWP(u){for(const p of CP){try{const r=await fetch(p(u),{signal:AbortSignal.timeout(10000)});if(r.ok)return await r.text()}catch{}}try{const r=await fetch(u,{signal:AbortSignal.timeout(8000)});if(r.ok)return await r.text()}catch{}return null}
-function pRSS(x,n){const d=new DOMParser().parseFromString(x,'text/xml'),it=d.querySelectorAll('item'),ep=[],c=new Date;c.setDate(c.getDate()-DB);c.setHours(0,0,0,0);it.forEach(i=>{const ps=i.querySelector('pubDate')?.textContent;if(!ps)return;const pd=new Date(ps);if(pd<c)return;const t=i.querySelector('title')?.textContent||'Untitled',ds=i.querySelector('description')?.textContent||'',en=i.querySelector('enclosure'),au=en?.getAttribute('url')||'',lk=i.querySelector('link')?.textContent||'',du=i.querySelector('duration')?.textContent||i.querySelector('itunes\\:duration, [nodeName="itunes:duration"]')?.textContent||'';ep.push({podcast:n,title:cH(t),description:cH(ds).substring(0,200),pubDate:pd,audioUrl:au,link:lk,duration:du})});return ep}
-function cH(s){const d=document.createElement('div');d.innerHTML=s;return d.textContent||d.innerText||s}
-async function loadEpisodes(){const ld=document.getElementById('loading'),ls=document.getElementById('episode-list');ld.style.display='block';ls.innerHTML='';const subs=await gAS();let ae=[];const ps=subs.map(async s=>{const x=await fWP"=s.feedUrl);return x?pRSS(x,s.name):[]});const rs=await Promise.allSettled(ps);rs.forEach(r=>{if(r.status==='fulfilled')ae.push(...r.value)});ae.sort((a,b)=>b.pubDate-a.pubDate);ld.style.display='none';if(!ae.length){ls.innerHTML='<div class="empty"><div style="font-size:2em">ð§</div><div>No episodes from the past '+DB+' days</div></div>';uRT();return}const g={};ae.forEach(e=>{const k=e.pubDate.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});if(!g[k])g[k]=[];g[k].push(e)});document.querySelector('.tab').innerHTML='Episodes <span class="count-badge">'+ae.length+'</span>';let h='';for(const[d,es] of Object.entries(g)){h+='<div class="day-group"><div class="day-label">'+d+'</div>';es.forEach(e=>{const tm=e.pubDate.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});let lk='';if(e.audioUrl)lk+='<a class="ep-link play" href="'+e.audioUrl+'" target="_blank">Play</a>';if(e.link)lk+='<a class="ep-link web" href="'+e.link+'" target="_blank">View</a>';h='<div class="episode"><div class="ep-podcast">'+e.podcast+'</div><div class="ep-title">'+e.title+'</div><div class="ep-meta"><span>'+tm+'</span>'+(e.duration?'<span>'+e.duration+'</span>':'')+'</div>'+(e.description?'<div class="ep-desc">'+e.description+'</div>':'')+(lk?'<div class="ep-links">'+lk+'</div>':'')+'</div>'});h+='</div>'};ls.innerHTML=h;uRT()}
-function uRT(){document.getElementById('last-refresh').textContent='Updated '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}
-async function renderSubscriptions(){const subs=await gAS(),ls=document.getElementById('sub-list');if(!subs.length){ls.innerHTML='<div class="empty">No subscriptions yet</div>';return}ls.innerHTML=subs.map(s=>'<div class="sub-item"><div><div class="sub-name">'+s.name+'</div><div class="sub-source">'+(s.source==='github'?'Synced':'Local (this device)')+'</div></div>'+(s.source==='local'?'<button class="sub-remove" onclick="removeSub(\\''+s.feedUrl+'\\')">Remove</button>':'')+'</div>').join('')}
-function addPodcast(){const n=document.getElementById('add-name').value.trim(),u=document.getElementById('add-url').value.trim(),m=document.getElementById('add-msg');if(!n||!u){m.className='msg error';m.textContent='Please fill in both fields';return}if(!u.startsWith('http')){m.className='msg error';m.textContent='URL must start with http:// or https://';return}const l=gLS();if(l.find(s=>s.feedUrl===u)){m.className='msg error';m.textContent='This feed is already added';return}l.push({name:n,feedUrl:u});sLS(l);document.getElementById('add-name').value='';document.getElementById('add-url').value='';m.className='msg success';m.textContent='Added! Tap Refresh on Episodes tab';renderSubscriptions();setTimeout(()=>{m.className='msg'},4000)}
-function removeSub(f){sLS(gLS().filter(s=>s.feedUrl!==f));renderSubscriptions()}
-function switchTab(t){document.querySelectorAll('.tab').forEach((e,i)=>{e.classList.toggle('active',(t==='episodes'&&i===0)||(t==='manage'&&i===1))});document.getElementById('episodes-tab').style.display=t==='episodes'?'block':'none';document.getElementById('manage-tab').style.display=t==='manage'?'block':'none';if(t==='manage')renderSubscriptions()}
+const CORS_PROXIES = [
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`
+];
+const SUBS_URL = 'subscriptions.json';
+const LOCAL_SUBS_KEY = 'mopods_local_subs';
+const DAYS_BACK = 3;
+
+// --- Subscriptions ---
+async function getBaseSubscriptions() {
+  try {
+    const resp = await fetch(SUBS_URL + '?t=' + Date.now());
+    return await resp.json();
+  } catch (e) {
+    console.error('Failed to load base subscriptions:', e);
+    return [];
+  }
+}
+
+function getLocalSubscriptions() {
+  try {
+    return JSON.parse(localStorage.getItem(LOCAL_SUBS_KEY) || '[]');
+  } catch { return []; }
+}
+
+function saveLocalSubscriptions(subs) {
+  localStorage.setItem(LOCAL_SUBS_KEY, JSON.stringify(subs));
+}
+
+async function getAllSubscriptions() {
+  const base = await getBaseSubscriptions();
+  const local = getLocalSubscriptions();
+  // Merge, deduplicate by feedUrl
+  const seen = new Set();
+  const all = [];
+  for (const s of [...base, ...local]) {
+    if (!seen.has(s.feedUrl)) {
+      seen.add(s.feedUrl);
+      all.push({ ...s, source: base.find(b => b.feedUrl === s.feedUrl) ? 'github' : 'local' });
+    }
+  }
+  return all;
+}
+
+// --- RSS Fetching ---
+async function fetchWithProxy(url) {
+  for (const proxy of CORS_PROXIES) {
+    try {
+      const resp = await fetch(proxy(url), { signal: AbortSignal.timeout(10000) });
+      if (resp.ok) return await resp.text();
+    } catch (e) {
+      console.warn('Proxy failed:', e);
+    }
+  }
+  // Direct fetch as last resort
+  try {
+    const resp = await fetch(url, { signal: AbortSignal.timeout(8000) });
+    if (resp.ok) return await resp.text();
+  } catch {}
+  return null;
+}
+
+function parseRSS(xml, podcastName) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xml, 'text/xml');
+  const items = doc.querySelectorAll('item');
+  const episodes = [];
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - DAYS_BACK);
+  cutoff.setHours(0, 0, 0, 0);
+
+  items.forEach(item => {
+    const pubDateStr = item.querySelector('pubDate')?.textContent;
+    if (!pubDateStr) return;
+    const pubDate = new Date(pubDateStr);
+    if (pubDate < cutoff) return;
+
+    const title = item.querySelector('title')?.textContent || 'Untitled';
+    const description = item.querySelector('description')?.textContent || '';
+    const enclosure = item.querySelector('enclosure');
+    const audioUrl = enclosure?.getAttribute('url') || '';
+    const link = item.querySelector('link')?.textContent || '';
+    const duration = item.querySelector('duration')?.textContent ||
+                     item.querySelector('itunes\\:duration, [nodeName="itunes:duration"]')?.textContent || '';
+    const guid = item.querySelector('guid')?.textContent || title;
+
+    episodes.push({
+      podcast: podcastName,
+      title: cleanHTML(title),
+      description: cleanHTML(description).substring(0, 200),
+      pubDate,
+      audioUrl,
+      link,
+      duration,
+      guid
+    });
+  });
+  return episodes;
+}
+
+function cleanHTML(str) {
+  const div = document.createElement('div');
+  div.innerHTML = str;
+  return div.textContent || div.innerText || str;
+}
+
+// --- Display ---
+async function loadEpisodes() {
+  const loading = document.getElementById('loading');
+  const list = document.getElementById('episode-list');
+  loading.style.display = 'block';
+  list.innerHTML = '';
+
+  const subs = await getAllSubscriptions();
+  let allEpisodes = [];
+
+  const promises = subs.map(async sub => {
+    const xml = await fetchWithProxy(sub.feedUrl);
+    if (xml) {
+      return parseRSS(xml, sub.name);
+    }
+    return [];
+  });
+
+  const results = await Promise.allSettled(promises);
+  results.forEach(r => {
+    if (r.status === 'fulfilled') allEpisodes.push(...r.value);
+  });
+
+  // Sort newest first
+  allEpisodes.sort((a, b) => b.pubDate - a.pubDate);
+
+  loading.style.display = 'none';
+
+  if (allEpisodes.length === 0) {
+    list.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">&#127911;</div>
+        <div>No episodes from the past ${DAYS_BACK} days</div>
+      </div>`;
+    updateRefreshTime();
+    return;
+  }
+
+  // Group by day
+  const groups = {};
+  allEpisodes.forEach(ep => {
+    const dayKey = ep.pubDate.toLocaleDateString('en-GB', {
+      weekday: 'long', day: 'numeric', month: 'short'
+    });
+    if (!groups[dayKey]) groups[dayKey] = [];
+    groups[dayKey].push(ep);
+  });
+
+  // Update tab badge
+  const epsTab = document.querySelector('.tab');
+  epsTab.innerHTML = `Episodes <span class="count-badge">${allEpisodes.length}</span>`;
+
+  let html = '';
+  for (const [day, eps] of Object.entries(groups)) {
+    html += `<div class="day-group">`;
+    html += `<div class="day-label">${day}</div>`;
+    eps.forEach(ep => {
+      const durStr = ep.duration ? `<span>${ep.duration}</span>` : '';
+      const timeStr = ep.pubDate.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+      let links = '';
+      if (ep.audioUrl) {
+        links += `<a class="ep-link play" href="${ep.audioUrl}" target="_blank">Play</a>`;
+      }
+      if (ep.link) {
+        links += `<a class="ep-link web" href="${ep.link}" target="_blank">View</a>`;
+      }
+      html += `
+        <div class="episode">
+          <div class="ep-podcast">${ep.podcast}</div>
+          <div class="ep-title">${ep.title}</div>
+          <div class="ep-meta">
+            <span>${timeStr}</span>
+            ${durStr}
+          </div>
+          ${ep.description ? `<div class="ep-desc">${ep.description}</div>` : ''}
+          ${links ? `<div class="ep-links">${links}</div>` : ''}
+        </div>`;
+    });
+    html += `</div>`;
+  }
+  list.innerHTML = html;
+  updateRefreshTime();
+}
+
+function updateRefreshTime() {
+  const el = document.getElementById('last-refresh');
+  el.textContent = 'Updated ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+}
+
+// --- Manage tab ---
+async function renderSubscriptions() {
+  const subs = await getAllSubscriptions();
+  const list = document.getElementById('sub-list');
+  if (subs.length === 0) {
+    list.innerHTML = '<div class="empty">No subscriptions yet</div>';
+    return;
+  }
+  list.innerHTML = subs.map(s => `
+    <div class="sub-item">
+      <div>
+        <div class="sub-name">${s.name}</div>
+        <div class="sub-source">${s.source === 'github' ? 'Synced' : 'Local (this device)'}</div>
+      </div>
+      ${s.source === 'local' ? `<button class="sub-remove" onclick="removeSub('${s.feedUrl}')">Remove</button>` : ''}
+    </div>`).join('');
+}
+
+function addPodcast() {
+  const name = document.getElementById('add-name').value.trim();
+  const url = document.getElementById('add-url').value.trim();
+  const msg = document.getElementById('add-msg');
+
+  if (!name || !url) {
+    msg.className = 'msg error';
+    msg.textContent = 'Please fill in both fields';
+    return;
+  }
+  if (!url.startsWith('http')) {
+    msg.className = 'msg error';
+    msg.textContent = 'URL must start with http:// or https://';
+    return;
+  }
+
+  const local = getLocalSubscriptions();
+  if (local.find(s => s.feedUrl === url)) {
+    msg.className = 'msg error';
+    msg.textContent = 'This feed is already added';
+    return;
+  }
+
+  local.push({ name, feedUrl: url });
+  saveLocalSubscriptions(local);
+
+  document.getElementById('add-name').value = '';
+  document.getElementById('add-url').value = '';
+  msg.className = 'msg success';
+  msg.textContent = `Added "${name}" â tap Refresh on Episodes tab to see new pods`;
+
+  renderSubscriptions();
+  setTimeout(() => { msg.className = 'msg'; }, 4000);
+}
+
+function removeSub(feedUrl) {
+  const local = getLocalSubscriptions().filter(s => s.feedUrl !== feedUrl);
+  saveLocalSubscriptions(local);
+  renderSubscriptions();
+}
+
+// --- Tab switching ---
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', (tab === 'episodes' && i === 0) || (tab === 'manage' && i === 1));
+  });
+  document.getElementById('episodes-tab').style.display = tab === 'episodes' ? 'block' : 'none';
+  document.getElementById('manage-tab').style.display = tab === 'manage' ? 'block' : 'none';
+  if (tab === 'manage') renderSubscriptions();
+}
+
+// --- Init ---
 loadEpisodes();
 </script>
 </body>
