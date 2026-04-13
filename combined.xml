@@ -5,47 +5,109 @@
     <link>https://mycocybe.github.io/all-list-morags-daily-podcasts/</link>
     <description>Morag's daily podcast feed - AI Daily Brief, Nate B Jones, and MoPods originals</description>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 13 Apr 2026 13:15:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 20:13:36 GMT</lastBuildDate>
     <itunes:author>Morag</itunes:author>
     <itunes:category text="Technology"/>
     <itunes:image href="https://mycocybe.github.io/all-list-morags-daily-podcasts/artwork_all.jpg"/>
     <item>
+      <title>[NBJ] I Looked At Amazon After They Fired 16,000 Engineers. Their AI Broke Everything.</title>
+      <link>https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69dd4bca2cfb2f5bcbaa90bf/media.mp3</link>
+      <description></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69dd4bca2cfb2f5bcbaa90bf/media.mp3" length="107588342" type="audio/mpeg"/>
+      <guid isPermaLink="false">69dd4bca2cfb2f5bcbaa90bf</guid>
+      <pubDate>Mon, 13 Apr 2026 20:02:14 GMT</pubDate>
+      <itunes:duration>18:40</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>[MoPod] DMF MXL — Legacy, Software Production, and the Dynamic Media Facility</title>
+      <link>https://mycocybe.github.io/audio-mo-pods/dmf_mxl_answers_text_pod_2026-04-13.mp3</link>
+      <description></description>
+      <enclosure url="https://mycocybe.github.io/audio-mo-pods/dmf_mxl_answers_text_pod_2026-04-13.mp3" length="13703722" type="audio/mpeg"/>
+      <guid isPermaLink="false">dmf-mxl-answers-text-pod-20260413</guid>
+      <pubDate>Mon, 13 Apr 2026 20:01:03 GMT</pubDate>
+      <itunes:duration>09:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>[AIDB] Harness Engineering 101</title>
+      <link>https://anchor.fm/s/f7cac464/podcast/play/118369806/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-13%2F421955000-44100-2-1bd967633a8ec.mp3</link>
+      <description></description>
+      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118369806/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-13%2F421955000-44100-2-1bd967633a8ec.mp3" length="24409651" type="audio/mpeg"/>
+      <guid isPermaLink="false">368b1cf6-b757-40f2-b120-a9c81d9d360a</guid>
+      <pubDate>Mon, 13 Apr 2026 17:00:01 GMT</pubDate>
+      <itunes:duration>00:25:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>[MoPod] DMF &amp; MXL v3 — Legacy Strain, Software Production &amp; The Fabric</title>
+      <link>https://mycocybe.github.io/audio-mo-pods/dmf_mxl_v3_medium_2026-04-13.mp3</link>
+      <description></description>
+      <enclosure url="https://mycocybe.github.io/audio-mo-pods/dmf_mxl_v3_medium_2026-04-13.mp3" length="48588474" type="audio/mpeg"/>
+      <guid isPermaLink="false">dmf-mxl-v3-medium-2026-04-13</guid>
+      <pubDate>Sun, 13 Apr 2026 14:31:00 +0000</pubDate>
+      <itunes:duration>33:44</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>[MoPod] SOM Schema v0.2 — Deep Dive with Diagrams</title>
-      <description>SOM Open Specification v0.2 walked through in sixteen minutes. Architecture, six properties, Skills specification, federated identity, vendor tiers, TAMS junction, and three blind spots. Includes diagram callouts.</description>
+      <link>https://mycocybe.github.io/audio-mo-pods/som_schema_v02_deep_dive_2026-04-13.mp3</link>
+      <description></description>
       <enclosure url="https://mycocybe.github.io/audio-mo-pods/som_schema_v02_deep_dive_2026-04-13.mp3" length="23961672" type="audio/mpeg"/>
       <guid isPermaLink="false">mopod-som-schema-v02-deep-dive-2026-04-13</guid>
       <pubDate>Mon, 13 Apr 2026 14:00:00 +0100</pubDate>
       <itunes:duration>16:38</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
       <title>[MoPod] DMF and MXL — What They Are, Why They Matter</title>
-      <description>The Dynamic Media Facility and Media Exchange Layer explained in seventeen minutes. Legacy pain, TAMS foundations, MXL shared-memory transport, vendor ecosystem convergence, and three blind spots not in any spec.</description>
+      <link>https://mycocybe.github.io/audio-mo-pods/dmf_mxl_medium_2026-04-12.mp3</link>
+      <description></description>
       <enclosure url="https://mycocybe.github.io/audio-mo-pods/dmf_mxl_medium_2026-04-12.mp3" length="25807379" type="audio/mpeg"/>
       <guid isPermaLink="false">dmf-mxl-medium-2026-04-12</guid>
       <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
-      <itunes:duration>17:51</itunes:duration>
+      <itunes:duration>17:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
-      <title>[TEST] THIS IS FOR THE MOPOD LIST</title>
-      <description>Test episode</description>
-      <enclosure url="https://mycocybe.github.io/audio-mo-pods/test_mopod_list.mp3" length="96548" type="audio/mpeg"/>
-      <guid isPermaLink="false">test-mopod-list-20260412</guid>
-      <pubDate>Sun, 12 Apr 2026 11:00:00 +0100</pubDate>
-      <itunes:duration>0:06</itunes:duration>
+      <title>[NBJ] I Watched 3 Companies Lay Off Their Managers. All 3 Hit the Same Wall.</title>
+      <link>https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69dc1974cdaa3e377c55d4ca/media.mp3</link>
+      <description></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69dc1974cdaa3e377c55d4ca/media.mp3" length="189265374" type="audio/mpeg"/>
+      <guid isPermaLink="false">69dc1974cdaa3e377c55d4ca</guid>
+      <pubDate>Sun, 12 Apr 2026 22:15:15 GMT</pubDate>
+      <itunes:duration>32:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
       <title>[AIDB] The New AI Org Chart</title>
+      <link>https://anchor.fm/s/f7cac464/podcast/play/118326598/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F421897951-44100-2-689b676c039cb.mp3</link>
       <description></description>
-      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/100309038/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F1d5e3c89-b7a4-1b88-bd80-4b05d4efeb5d.mp3" length="0" type="audio/mpeg"/>
-      <guid isPermaLink="false">e3ef8c42-e9e4-4dab-9cd7-d95f3e6d42a1</guid>
+      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118326598/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F421897951-44100-2-689b676c039cb.mp3" length="26486490" type="audio/mpeg"/>
+      <guid isPermaLink="false">55f246ce-7fd8-40a1-8049-14868915ef82</guid>
       <pubDate>Sun, 12 Apr 2026 13:21:57 GMT</pubDate>
+      <itunes:duration>00:27:35</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
-      <title>[AIDB] Why Enterprise AI Has a Leadership Problem</title>
+      <title>[TEST] THIS IS FOR THE MOPOD LIST</title>
+      <link>https://mycocybe.github.io/audio-mo-pods/test.mp3</link>
       <description></description>
-      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/100248158/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-10%2Fa4e5f8d2-c3b1-4a92-8f6e-1d2e3f4a5b6c.mp3" length="0" type="audio/mpeg"/>
-      <guid isPermaLink="false">7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d</guid>
-      <pubDate>Fri, 10 Apr 2026 20:08:34 GMT</pubDate>
+      <enclosure url="https://mycocybe.github.io/audio-mo-pods/test.mp3" length="353946" type="audio/mpeg"/>
+      <guid isPermaLink="false">mopod-test-episode</guid>
+      <pubDate>Sun, 12 Apr 2026 11:00:00 +0100</pubDate>
+      <itunes:duration>0:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
+      <title>[NBJ] Google's New Quantization is a Game Changer</title>
+      <link>https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69da7b7ed3f0dd77473c53d1/media.mp3</link>
+      <description></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69da7b7ed3f0dd77473c53d1/media.mp3" length="128758254" type="audio/mpeg"/>
+      <guid isPermaLink="false">69da7b7ed3f0dd77473c53d1</guid>
+      <pubDate>Sat, 11 Apr 2026 16:48:59 GMT</pubDate>
+      <itunes:duration>22:21</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
 </rss>
