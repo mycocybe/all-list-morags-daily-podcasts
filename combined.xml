@@ -9,39 +9,46 @@
     <itunes:category text="Technology"/>
     <itunes:image href="https://mycocybe.github.io/all-list-morags-daily-podcasts/artwork_all.jpg"/>
     <item>
-      <title>[AIDB] AI&apos;s Great Divergence</title>
-      <description><![CDATA[Stanford's new AI Index and PwC's annual AI performance study reveal a widening gap between AI experts and the public, and between corporate leaders capturing 75% of AI's economic gains.]]></description>
-      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118571785/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-16%2F422223490-44100-2-54cddc394c35f.mp3" length="20062875" type="audio/mpeg"/>
-      <pubDate>Thu, 16 Apr 2026 20:28:34 GMT</pubDate>
-      <itunes:duration>00:20:53</itunes:duration>
+      <title>[AIDB] The AI Subsidy Era is Over</title>
+      <description><![CDATA[The AI discount is ending as agentic usage drives token consumption through the roof, forcing companies from GitHub to Anthropic to rethink pricing, limits, and compute access.]]></description>
+      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/119194128/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-28%2F423069692-44100-2-176b451acdfa2.mp3" length="25189563" type="audio/mpeg"/>
+      <pubDate>Tue, 28 Apr 2026 21:36:58 GMT</pubDate>
+      <itunes:duration>00:26:14</itunes:duration>
     </item>
     <item>
-      <title>[NBJ] The Real Problem With AI Agents Nobody&apos;s Talking About</title>
-      <description><![CDATA[What's really happening inside the OpenClaw phenomenon when 250,000 GitHub stars later the most consequential AI agent framework emerges.]]></description>
-      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69dfee45e733e471896768b4/media.mp3" length="150801982" type="audio/mpeg"/>
-      <pubDate>Wed, 15 Apr 2026 23:26:20 GMT</pubDate>
-      <itunes:duration>26:10</itunes:duration>
+      <title>[NBJ] GPT-5.5 vs Claude vs Gemini: The Real Difference Nobody&apos;s Talking About</title>
+      <description><![CDATA[What's really happening inside the GPT-5.5 release when everyone is comparing benchmark deltas but missing that the floor moved?]]></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69f0d44c2f651f55f5029af4/media.mp3" length="46888264" type="audio/mpeg"/>
+      <pubDate>Tue, 28 Apr 2026 15:37:47 GMT</pubDate>
+      <itunes:duration>32:33</itunes:duration>
     </item>
     <item>
-      <title>[AIDB] Vibe Coding Gets an Upgrade</title>
-      <description><![CDATA[A wave of updates across Claude Code, Lovable, and Google AI Studio shows how fast agentic coding tools are converging and why enterprise hardening of vibe coding may be one of the biggest building opportunities.]]></description>
-      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118518733/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-15%2F422151792-44100-2-01d2afe495cfd.mp3" length="23552834" type="audio/mpeg"/>
-      <pubDate>Wed, 15 Apr 2026 20:19:57 GMT</pubDate>
-      <itunes:duration>00:24:32</itunes:duration>
+      <title>[AIDB] How DeepSeek V4 Connects to the US Power Grid</title>
+      <description><![CDATA[Today's episode connects two stories that look unrelated on the surface - the White House invoking the Defense Production Act around US grid infrastructure, and DeepSeek's long-awaited V4 release.]]></description>
+      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/119135373/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-27%2F422991934-44100-2-bf0039b658dd9.mp3" length="23944880" type="audio/mpeg"/>
+      <pubDate>Mon, 27 Apr 2026 23:00:39 GMT</pubDate>
+      <itunes:duration>00:24:56</itunes:duration>
     </item>
     <item>
-      <title>[AIDB] AI Populism Turns Violent</title>
-      <description><![CDATA[AI policy meets real-world volatility as protests target tech companies and governments struggle with AI governance frameworks.]]></description>
-      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/118480399/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-14%2F422098254-44100-2-ed971dd1b4d51.mp3" length="19197498" type="audio/mpeg"/>
-      <pubDate>Wed, 15 Apr 2026 00:56:02 GMT</pubDate>
-      <itunes:duration>00:19:59</itunes:duration>
+      <title>[NBJ] OpenAI Just Gave Every Team a Free Employee. Here&apos;s the Catch.</title>
+      <description><![CDATA[What's really happening inside ChatGPT's new Workspace Agents launch? The common story is that this is just a chatbot upgrade - but the reality is more interesting.]]></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69ef2bae2f651f55f5028e4f/media.mp3" length="33441544" type="audio/mpeg"/>
+      <pubDate>Mon, 27 Apr 2026 18:33:34 GMT</pubDate>
+      <itunes:duration>23:13</itunes:duration>
     </item>
     <item>
-      <title>[NBJ] 3 Model Drops. $15M/Day in Burn. One Product Dead. Nobody Connected Them.</title>
-      <description><![CDATA[What's really happening underneath the March 2026 headlines when everyone was watching model drops.]]></description>
-      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69de828cf02f2470e93d6376/media.mp3" length="119982230" type="audio/mpeg"/>
-      <pubDate>Tue, 14 Apr 2026 18:08:07 GMT</pubDate>
-      <itunes:duration>20:49</itunes:duration>
+      <title>[NBJ] Apple Just Positioned Itself for the Next Trillion Dollars</title>
+      <description><![CDATA[What's really happening inside Apple's AI strategy behind the scenes.]]></description>
+      <enclosure url="https://sphinx.acast.com/p/open/s/69ab3b7c7036d739021982df/e/69ee0dab2f651f55f5028679/media.mp3" length="30771784" type="audio/mpeg"/>
+      <pubDate>Mon, 27 Apr 2026 00:31:23 GMT</pubDate>
+      <itunes:duration>21:22</itunes:duration>
+    </item>
+    <item>
+      <title>[AIDB] Where the Economy Thrives After AI</title>
+      <description><![CDATA[Where does economic growth actually happen once AI handles the knowledge work? This episode explores the sectors, skills, and strategies that thrive in an AI-augmented economy.]]></description>
+      <enclosure url="https://anchor.fm/s/f7cac464/podcast/play/119079893/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-26%2F422917508-44100-2-f1b5aab1c37b.mp3" length="28430000" type="audio/mpeg"/>
+      <pubDate>Sun, 26 Apr 2026 21:05:52 GMT</pubDate>
+      <itunes:duration>00:29:36</itunes:duration>
     </item>
   </channel>
 </rss>
